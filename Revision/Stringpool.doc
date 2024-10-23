@@ -1,0 +1,6 @@
+The String Pool (also known as the String Intern Pool) in Java is a special memory area within the heap where string literals are stored. It optimizes memory usage and performance by ensuring that strings with the same content are not duplicated, but instead, a single instance is reused.
+
+How the String Pool Works:
+When you create a string using a literal (e.g., String s = "Hello";), Java checks if the string "Hello" already exists in the string pool:
+If it exists, Java will return the reference to the existing string.
+If it doesn't exist, the string "Hello" is added to the pool, and the reference is returned.
